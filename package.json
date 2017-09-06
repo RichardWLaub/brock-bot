@@ -1,0 +1,14 @@
+{
+  "name": "brock-bot",
+  "version": "1.0.0",
+  "description": "Brock Osweiler Slack Bot",
+  "main": "node index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "R.W. Laub",
+  "license": "ISC",
+  "dependencies": {
+    "botkit": "^0.5.8"
+  }
+}

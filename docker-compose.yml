@@ -1,0 +1,8 @@
+---
+version: '3'
+services:
+  brock-bot:
+    build: .
+    environment:
+      - NODE_ENV=production
+    env_file: .env
