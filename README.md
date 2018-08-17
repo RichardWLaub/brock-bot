@@ -10,22 +10,22 @@ The Brock Osweiler Slack Bot
 
 1. Clone this repo
 
-  ```
-    git clone https://github.com/RichardWLaub/brock-bot.git
-    cd brock-bot
-  ```
+   ```
+     git clone https://github.com/RichardWLaub/brock-bot.git
+     cd brock-bot
+   ```
 
 1. Add your slack token to a `.env` file
 
-  ```
-    echo 'token=<my-token>' > .env
-  ```
+   ```
+     echo 'token=<my-token>' > .env
+   ```
 
 1. Deploy with docker-compose
 
-  ```
-    docker-compose up -d
-  ```
+   ```
+     docker-compose up -d
+   ```
 
 1. Brock 'n' roll baby!
 
