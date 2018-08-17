@@ -37,8 +37,6 @@ var images = [
         'http://ww1.hdnux.com/photos/57/60/64/12520732/3/920x920.jpg',
         'http://i.imgur.com/RrZW1Iz.jpg',
         'https://nesncom.files.wordpress.com/2015/11/brock-osweiler-stephen-gostkowski.jpg',
-        'http://giant.gfycat.com/ParchedWelltodoAlaskanhusky.gif',
-        'https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAYCAAAAJDllYWE5NjQ1LTNkY2ItNDgyYS05ZDUyLWJlYjI3M2M5MmM5ZA.jpg',
         'https://nesncom.files.wordpress.com/2012/08/6a0115709f071f970b0168ead37993970c.jpe'
     ];
 

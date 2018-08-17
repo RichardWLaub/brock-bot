@@ -9,6 +9,6 @@
   "author": "R.W. Laub",
   "license": "ISC",
   "dependencies": {
-    "botkit": "^0.5.8"
+    "botkit": "^0.6.16"
   }
 }
