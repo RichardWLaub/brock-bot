@@ -40,7 +40,7 @@ var images = [
         'https://nesncom.files.wordpress.com/2012/08/6a0115709f071f970b0168ead37993970c.jpe'
     ];
 
-controller.hears(['brock'], ['ambient', 'direct_message', 'direct_mention', 'mention'], function (bot, message) {
+function brockRespond(bot, message) {
 
     'use strict';
     var text = texts[Math.floor(Math.random() * texts.length)],
@@ -56,4 +56,14 @@ controller.hears(['brock'], ['ambient', 'direct_message', 'direct_mention', 'men
 
     bot.reply(message, reply_with_attachments);
 
+}
+
+controller.on(['direct_mention', 'mention'], function (bot, message) {
+    'use strict';
+    brockRespond(bot, message);
+});
+
+controller.hears(['brock'], ['ambient', 'direct_message', 'direct_mention', 'mention'], function (bot, message) {
+    'use strict';
+    brockRespond(bot, message);
 });
