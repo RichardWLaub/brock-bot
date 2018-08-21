@@ -25,6 +25,7 @@ var bot = controller.spawn({
 }).startRTM();
 
 var texts = [
+        'Brocket Launcher!!!',
         "Don't Brock till you get enough",
         'Brock lobsta!',
         'Between a Brock and a hard place',
@@ -34,6 +35,7 @@ var texts = [
     ];
 
 var images = [
+        'https://dalydosesports.files.wordpress.com/2016/12/100916-nfl-houston-texans-brock-osweiler-vadapt-664-high-88.jpg',
         'http://ww1.hdnux.com/photos/57/60/64/12520732/3/920x920.jpg',
         'http://i.imgur.com/RrZW1Iz.jpg',
         'https://nesncom.files.wordpress.com/2015/11/brock-osweiler-stephen-gostkowski.jpg',
