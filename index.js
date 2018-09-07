@@ -69,3 +69,17 @@ controller.hears(['brock'], ['ambient', 'direct_message', 'direct_mention', 'men
     'use strict';
     brockRespond(bot, message);
 });
+
+controller.hears([/[^\s]*[a-qs-zA-QS-Z]+ock/g], ['ambient', 'direct_message', 'direct_mention', 'mention'], function (bot, message) {
+    'use strict';
+    var text = message.text + "?! More like " + message.text.replace(message.match[0], "Brock") + "!",
+        reply_with_attachments = {
+            'attachments': [
+                {
+                    "pretext": text,
+                }
+            ],
+        };
+
+    bot.reply(message, reply_with_attachments);
+});
