@@ -25,6 +25,7 @@ var bot = controller.spawn({
 }).startRTM();
 
 var texts = [
+        'Birds of a feather Brock together',
         'Brocket Launcher!!!',
         "Don't Brock till you get enough",
         'Brock lobsta!',
@@ -35,6 +36,7 @@ var texts = [
     ];
 
 var images = [
+        'https://i2.wp.com/footballgarbagetime.com/wp-content/uploads/2016/03/Brock-Osweiler-Basketball-e1457417681808.jpg',
         'https://dalydosesports.files.wordpress.com/2016/12/100916-nfl-houston-texans-brock-osweiler-vadapt-664-high-88.jpg',
         'http://ww1.hdnux.com/photos/57/60/64/12520732/3/920x920.jpg',
         'http://i.imgur.com/RrZW1Iz.jpg',
@@ -68,4 +70,18 @@ controller.on(['direct_mention', 'mention'], function (bot, message) {
 controller.hears(['brock'], ['ambient', 'direct_message', 'direct_mention', 'mention'], function (bot, message) {
     'use strict';
     brockRespond(bot, message);
+});
+
+controller.hears([/[^\s]*[a-qs-zA-QS-Z]+ock/g], ['ambient', 'direct_message', 'direct_mention', 'mention'], function (bot, message) {
+    'use strict';
+    var text = message.text + "?! More like " + message.text.replace(message.match[0], "Brock") + "!",
+        reply_with_attachments = {
+            'attachments': [
+                {
+                    "pretext": text,
+                }
+            ],
+        };
+
+    bot.reply(message, reply_with_attachments);
 });
